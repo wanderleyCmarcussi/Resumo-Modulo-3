@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tsl-PS-IVt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit View Controller-->
+        <scene sceneID="sWr-bf-5fx">
+            <objects>
+                <viewController id="tsl-PS-IVt" customClass="EditViewController" customModule="Resumo_Modulo3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ToA-39-8Mr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PXd-qU-de0">
+                                <rect key="frame" x="0.0" y="89" width="375" height="513"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="513" id="pv3-aq-Twd"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOn-kB-OZz">
+                                <rect key="frame" x="29" y="617" width="30" height="30"/>
+                                <state key="normal" title="Noir"/>
+                                <connections>
+                                    <action selector="tappedNoir:" destination="tsl-PS-IVt" eventType="touchUpInside" id="9Qf-o6-vFJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gn4-wX-paa">
+                                <rect key="frame" x="168" y="617" width="39" height="30"/>
+                                <state key="normal" title="Mono"/>
+                                <connections>
+                                    <action selector="tappedMono:" destination="tsl-PS-IVt" eventType="touchUpInside" id="Zwn-x4-sME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wib-rU-QEI">
+                                <rect key="frame" x="308" y="28" width="41" height="30"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="clicarVoltar:" destination="tsl-PS-IVt" eventType="touchUpInside" id="2wR-2Z-uTq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ps-di-6s0">
+                                <rect key="frame" x="302" y="617" width="47" height="30"/>
+                                <state key="normal" title="Instant"/>
+                                <connections>
+                                    <action selector="tappedInstant:" destination="tsl-PS-IVt" eventType="touchUpInside" id="IJN-EH-8Nb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ps-di-6s0" firstAttribute="top" secondItem="PXd-qU-de0" secondAttribute="bottom" constant="15" id="5Hv-Fw-2TS"/>
+                            <constraint firstItem="BlA-Zc-oKO" firstAttribute="trailing" secondItem="1Ps-di-6s0" secondAttribute="trailing" constant="26" id="5jh-DQ-vkt"/>
+                            <constraint firstItem="gn4-wX-paa" firstAttribute="top" secondItem="PXd-qU-de0" secondAttribute="bottom" constant="15" id="8fj-Cv-uVw"/>
+                            <constraint firstItem="bOn-kB-OZz" firstAttribute="leading" secondItem="BlA-Zc-oKO" secondAttribute="leading" constant="29" id="EcP-gp-Nmb"/>
+                            <constraint firstItem="PXd-qU-de0" firstAttribute="leading" secondItem="BlA-Zc-oKO" secondAttribute="leading" id="F7y-KQ-dJh"/>
+                            <constraint firstItem="BlA-Zc-oKO" firstAttribute="bottom" secondItem="bOn-kB-OZz" secondAttribute="bottom" constant="20" id="HtV-zz-kuc"/>
+                            <constraint firstItem="wib-rU-QEI" firstAttribute="top" secondItem="BlA-Zc-oKO" secondAttribute="top" constant="8" id="OsY-qV-FRn"/>
+                            <constraint firstItem="bOn-kB-OZz" firstAttribute="top" secondItem="PXd-qU-de0" secondAttribute="bottom" constant="15" id="Qmz-3y-dCF"/>
+                            <constraint firstItem="PXd-qU-de0" firstAttribute="trailing" secondItem="BlA-Zc-oKO" secondAttribute="trailing" id="S3y-QR-833"/>
+                            <constraint firstItem="gn4-wX-paa" firstAttribute="centerX" secondItem="PXd-qU-de0" secondAttribute="centerX" id="Vg2-bX-hlV"/>
+                            <constraint firstItem="PXd-qU-de0" firstAttribute="top" secondItem="BlA-Zc-oKO" secondAttribute="top" constant="69" id="Zt0-72-Zao"/>
+                            <constraint firstItem="BlA-Zc-oKO" firstAttribute="trailing" secondItem="wib-rU-QEI" secondAttribute="trailing" constant="26" id="npy-Wb-L7C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BlA-Zc-oKO"/>
+                    </view>
+                    <connections>
+                        <outlet property="closetButton" destination="wib-rU-QEI" id="fQU-CX-rFP"/>
+                        <outlet property="postImage" destination="PXd-qU-de0" id="ShC-5b-lhB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DqP-ZI-iZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="232.53373313343329"/>
+        </scene>
+    </scenes>
+</document>
